@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    border: solid 2px red;
+}
+.hangman-display {
+    display: flex;
+    flex-direction: column;
+}
+#word-display {
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    border: solid 2px green;
+}
+#keyboard-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 340px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+#counter-area {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#counter {
+    display:flex;
+}
+
+.each-letter {
+    display: flex;
+    flex-direction: row;
+    width: 12px;
+    color: white;
+    text-decoration: underline;
+}
+#image_display {
+    height: 281px;
+    width: 151px;
+    background-size: cover;
+    background-position: center;
+    border: solid 2px black;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    all: unset;
+    border-radius: 18px;
+    border: solid 2px white;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}

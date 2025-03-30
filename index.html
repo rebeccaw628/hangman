@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
-    <style ref="stylesheet" src="./style.css"></style>
+    <script src="./script.js" defer type="module"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <h1> Hangman </h1>
-        <button>Play again</button>
+        <h1>HANGMAN</h1>
     </header>
-    
+    <main>
+        <section class="game-container">
+            <div class="hangman-display">
+                <img class="hangman-img" src='./assets/img/h-0.jpg' alt="hangman-drawing"/>
+            </div>
+            <div id="word-display"></div>
+            <div id="keyboard-area"></div>
+            <button class="hidden">Play again</button>
+            <h2 id="counter-area">Incorrect Guesses:
+                <p class="counter"><span id="wrong-count">0</span>/<span id="maxWrong">10</span></p>
+            </h2>
+        </section>
+        
+    </main>
 </body>
 </html>
+
