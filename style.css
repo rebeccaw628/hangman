@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -32,17 +33,37 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 35px;
-    border: solid 2px red;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    } 
 }
 .hangman-display {
     display: flex;
     flex-direction: column;
 }
+.hangman-display img {
+    @media only screen and (min-width: 768px) {
+        min-width: 280px;
+        min-height: 350px;
+        max-width: 280px;
+        max-height: 350px;
+    }
+}
+.no-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 #word-display {
     display: flex;
     flex-direction: row;
-    font-size: 50px;
-    border: solid 2px green;
+    font-size: 30px;
+    margin-bottom: 5%;
+    @media only screen and (min-width: 768px) {
+        font-size: 50px;
+    }
 }
 #keyboard-area {
     display: flex;
@@ -53,6 +74,10 @@ main {
     height: 140px;
     width: 340px;
     text-align: center;
+    @media only screen and (min-width: 768px) {
+        font-size: 20px;
+        margin-top: 15%;
+    }
 }
 .hidden {
     display: none;
@@ -64,26 +89,14 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
+    @media only screen and (min-width: 768px) {
+        margin-top: 15%;
+    }
 }
 #counter {
     display:flex;
 }
 
-.each-letter {
-    display: flex;
-    flex-direction: row;
-    width: 12px;
-    color: white;
-    text-decoration: underline;
-}
-#image_display {
-    height: 281px;
-    width: 151px;
-    background-size: cover;
-    background-position: center;
-    border: solid 2px black;
-
-}
 footer {
     display: flex;
     flex-direction: column;

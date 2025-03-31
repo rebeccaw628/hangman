@@ -15,6 +15,7 @@ const keyboard = document.querySelector('#keyboard-area');
 const incorrect = document.querySelector('#wrong-count');
 let hangmanImg = document.querySelector('.hangman-display img');
 const wordDisplay = document.querySelector('#word-display');
+const resetBtn = document.querySelector('button');
 
 // word display
 const displayWord = () => {
@@ -77,15 +78,14 @@ const checkStatus = () => {
         keyboard.textContent = `You lost :( The word was '${chosenWord}'.`
         showButton();
     }
-    
 };
 
 // show reset button
 const showButton = () => {
-    document.querySelector('button').classList.remove('hidden')
+    resetBtn.classList.remove('hidden')
 };
 
-document.querySelector('button').addEventListener('click', () => {
+resetBtn.addEventListener('click', () => {
     reset();
 });
 
