@@ -43,11 +43,11 @@ main {
 }
 .hangman-display img {
     @media only screen and (min-width: 768px) {
-        min-width: 280px;
-        min-height: 350px;
-        max-width: 280px;
-        max-height: 350px;
-    }
+        min-height: 400px;
+        min-width: 330px;
+        max-height: 400px;
+        max-width: 330px;
+    } 
 }
 .no-img-container {
     display: flex;
@@ -63,6 +63,7 @@ main {
     margin-bottom: 5%;
     @media only screen and (min-width: 768px) {
         font-size: 50px;
+        margin-top: 10%;
     }
 }
 #keyboard-area {
@@ -96,7 +97,6 @@ main {
 #counter {
     display:flex;
 }
-
 footer {
     display: flex;
     flex-direction: column;

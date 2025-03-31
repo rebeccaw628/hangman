@@ -13,7 +13,7 @@ let wrongGuessCount = 0;
 
 const keyboard = document.querySelector('#keyboard-area');
 const incorrect = document.querySelector('#wrong-count');
-let hangmanImg = document.querySelector('.hangman-display img');
+const hangmanImg = document.querySelector('.hangman-display img');
 const wordDisplay = document.querySelector('#word-display');
 const resetBtn = document.querySelector('button');
 
