@@ -30,7 +30,6 @@ export const buttons = () => {
     for (let letter of 'qwertyuiopasdfghjklzxcvbnm') {
     let button = document.createElement('button');
     button.textContent = letter;
-    // button.id = `${letter}`;
     keyboard.appendChild(button);
     button.addEventListener('click', () => onGuess(button, letter));
     }
@@ -90,7 +89,7 @@ resetBtn.addEventListener('click', () => {
 });
 
 const reset = () => {
-    keyboard.innerHTML = ''
+    keyboard.innerHTML = '';
     document.querySelector('button').classList.add('hidden');
     guessedLetters = [];
     wrongGuessCount = 0;
